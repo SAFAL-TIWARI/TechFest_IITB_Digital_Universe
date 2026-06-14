@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Techfest IIT Bombay - The Techfest Digital Universe, an immersive 3D technology festival experience.">
+  <title>Techfest IIT Bombay | Digital Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-orbit"></div>
+    <span>Initializing Digital Universe</span>
+  </div>
+
+  <canvas id="universe-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#hero" aria-label="Techfest IIT Bombay home">
+      <span class="brand-mark">TF</span>
+      <span>Techfest</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#timeline">Timeline</a>
+      <a href="#domains">Domains</a>
+      <a href="#metaverse">Metaverse</a>
+      <a href="#challenge">Challenge</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="section hero-section panel">
+      <div class="hero-copy">
+        <p class="eyebrow">The Techfest Digital Universe</p>
+        <h1>TECHFEST IIT BOMBAY</h1>
+        <p class="subtitle">Asia's Largest Science &amp; Technology Festival</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#timeline">Explore</a>
+          <a class="btn btn-ghost" href="#contact">Join Innovation</a>
+        </div>
+      </div>
+      <div class="hero-hud">
+        <div class="hud-card">
+          <span>Orbital Sync</span>
+          <strong>98.7%</strong>
+        </div>
+        <div class="hud-card">
+          <span>Innovation Signal</span>
+          <strong>Live</strong>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#timeline" aria-label="Scroll to timeline">
+        <span></span>
+      </a>
+    </section>
+
+    <section id="timeline" class="section timeline-section panel">
+      <div class="section-heading">
+        <p class="eyebrow">Digital Timeline</p>
+        <h2>Milestones Through The Tech Corridor</h2>
+      </div>
+      <div class="timeline-track" aria-label="Techfest milestone timeline">
+        <article class="timeline-card" data-depth="1">
+          <span>01</span>
+          <h3>Innovation</h3>
+          <p>Prototype labs, disruptive ideas, and student-led invention showcases.</p>
+        </article>
+        <article class="timeline-card" data-depth="2">
+          <span>02</span>
+          <h3>Robotics</h3>
+          <p>Autonomous machines, arena battles, swarm logic, and precision control.</p>
+        </article>
+        <article class="timeline-card" data-depth="3">
+          <span>03</span>
+          <h3>AI</h3>
+          <p>Neural systems, applied intelligence, generative tools, and decision engines.</p>
+        </article>
+        <article class="timeline-card" data-depth="4">
+          <span>04</span>
+          <h3>Space Technology</h3>
+          <p>Orbital systems, payload thinking, satellite missions, and launch concepts.</p>
+        </article>
+        <article class="timeline-card" data-depth="5">
+          <span>05</span>
+          <h3>Cybersecurity</h3>
+          <p>Capture-the-flag arenas, threat modeling, crypto puzzles, and secure design.</p>
+        </article>
+        <article class="timeline-card" data-depth="6">
+          <span>06</span>
+          <h3>Sustainability</h3>
+          <p>Climate tech, circular systems, energy innovation, and resilient cities.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="domains" class="section domains-section panel">
+      <div class="section-heading">
+        <p class="eyebrow">Tech Domains</p>
+        <h2>Choose A Field, Open A Portal</h2>
+      </div>
+      <div class="domain-grid">
+        <button class="domain-card" data-domain="Artificial Intelligence" data-detail="Build adaptive systems that reason, predict, generate, and collaborate across real-world constraints.">
+          <span class="mini-model" aria-hidden="true"></span>
+          <strong>Artificial Intelligence</strong>
+          <small>Neural engines and agentic systems</small>
+        </button>
+        <button class="domain-card" data-domain="Robotics" data-detail="Design robots that sense, plan, move, and compete in dynamic challenge arenas.">
+          <span class="mini-model" aria-hidden="true"></span>
+          <strong>Robotics</strong>
+          <small>Autonomy, actuation, and control</small>
+        </button>
+        <button class="domain-card" data-domain="Space Tech" data-detail="Explore launch systems, satellites, mission planning, and space-grade engineering.">
+          <span class="mini-model" aria-hidden="true"></span>
+          <strong>Space Tech</strong>
+          <small>Payloads, orbits, and missions</small>
+        </button>
+        <button class="domain-card" data-domain="Web Development" data-detail="Create high-performance interfaces, immersive experiences, and connected products.">
+          <span class="mini-model" aria-hidden="true"></span>
+          <strong>Web Development</strong>
+          <small>Interfaces for the connected world</small>
+        </button>
+        <button class="domain-card" data-domain="Cyber Security" data-detail="Break, defend, audit, and architect systems that withstand hostile environments.">
+          <span class="mini-model" aria-hidden="true"></span>
+          <strong>Cyber Security</strong>
+          <small>Defense, cryptography, and CTF</small>
+        </button>
+        <button class="domain-card" data-domain="IoT" data-detail="Connect devices, data, sensors, and edge intelligence for smart environments.">
+          <span class="mini-model" aria-hidden="true"></span>
+          <strong>IoT</strong>
+          <small>Edge networks and smart systems</small>
+        </button>
+      </div>
+    </section>
+
+    <section id="metaverse" class="section metaverse-section panel">
+      <div class="section-heading">
+        <p class="eyebrow">Techfest Metaverse</p>
+        <h2>Fly Through The Event City</h2>
+      </div>
+      <div class="city-labels">
+        <span>Events</span>
+        <span>Competitions</span>
+        <span>Workshops</span>
+        <span>Hackathons</span>
+        <span>Speaker Sessions</span>
+      </div>
+    </section>
+
+    <section id="robot" class="section robot-section panel">
+      <div class="robot-stage">
+        <div class="robot-assistant" id="robotAssistant" role="button" tabindex="0" aria-label="Interactive Techfest robot assistant">
+          <div class="speech-bubble">Welcome to Techfest</div>
+          <div class="robot-head">
+            <span class="robot-eye"></span>
+            <span class="robot-eye"></span>
+          </div>
+          <div class="robot-body">
+            <span class="robot-core"></span>
+          </div>
+          <span class="robot-arm arm-left"></span>
+          <span class="robot-arm arm-right"></span>
+          <span class="robot-leg leg-left"></span>
+          <span class="robot-leg leg-right"></span>
+        </div>
+      </div>
+      <div class="section-heading align-left">
+        <p class="eyebrow">Interactive Robot</p>
+        <h2>Your Digital Guide Is Online</h2>
+        <p>Move your cursor, hover, or tap the assistant to see it respond.</p>
+      </div>
+    </section>
+
+    <section id="stats" class="section stats-section panel">
+      <div class="section-heading">
+        <p class="eyebrow">Live Stats</p>
+        <h2>Festival Scale Dashboard</h2>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card"><strong data-count="180000">0</strong><span>Visitors</span></article>
+        <article class="stat-card"><strong data-count="300">0</strong><span>Events</span></article>
+        <article class="stat-card"><strong data-count="2500">0</strong><span>Colleges</span></article>
+        <article class="stat-card"><strong data-count="30">0</strong><span>Years of Innovation</span></article>
+      </div>
+    </section>
+
+    <section id="challenge" class="section challenge-section panel">
+      <div class="section-heading align-left">
+        <p class="eyebrow">Innovation Challenge</p>
+        <h2>Spin The Problem Cube</h2>
+        <p id="challengeText">Click a face to reveal a challenge brief.</p>
+      </div>
+      <div class="cube-wrap" aria-label="Innovation challenge cube">
+        <div class="challenge-cube" id="challengeCube">
+          <button class="cube-face cube-front" data-challenge="AI systems that help campuses reduce energy waste in real time.">AI</button>
+          <button class="cube-face cube-back" data-challenge="Affordable mission concepts for low-earth-orbit educational payloads.">Space</button>
+          <button class="cube-face cube-right" data-challenge="Climate tools that translate local data into actionable citizen decisions.">Climate</button>
+          <button class="cube-face cube-left" data-challenge="Healthcare access platforms for remote triage and diagnostics.">Healthcare</button>
+          <button class="cube-face cube-top" data-challenge="Education products that adapt to different learning speeds.">Education</button>
+          <button class="cube-face cube-bottom" data-challenge="Smart city systems that balance mobility, safety, and sustainability.">Smart Cities</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="section journey-section panel">
+      <div class="section-heading">
+        <p class="eyebrow">Techfest Journey</p>
+        <h2>Launch, Deploy, Connect</h2>
+      </div>
+      <div class="journey-grid">
+        <article><span>01</span><h3>Rocket Launch</h3><p>Ignition sequence begins as the story enters orbit.</p></article>
+        <article><span>02</span><h3>Satellite Deployment</h3><p>Signal nodes unfold and map a living festival network.</p></article>
+        <article><span>03</span><h3>Drone Flight</h3><p>Autonomous routes trace the skyline and link every domain.</p></article>
+        <article><span>04</span><h3>Network Connections</h3><p>Data streams converge into the digital universe.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section panel">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Enter The Next Orbit</h2>
+          <p>Connect with Techfest IIT Bombay for events, competitions, workshops, and innovation partnerships.</p>
+        </div>
+        <form class="contact-form">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Your name">
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Tell us what you want to build"></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Transmit</button>
+        </form>
+        <div class="social-links" aria-label="Social links">
+          <a href="https://techfest.org" target="_blank" rel="noreferrer">Website</a>
+          <a href="https://www.instagram.com/techfest_iitbombay/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/company/techfest-iit-bombay/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="domainModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-panel">
+      <button class="modal-close" type="button" aria-label="Close modal">&times;</button>
+      <p class="eyebrow">Domain Portal</p>
+      <h2 id="modalTitle">Artificial Intelligence</h2>
+      <p id="modalDetail"></p>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
